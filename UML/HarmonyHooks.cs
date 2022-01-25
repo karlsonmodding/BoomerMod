@@ -85,7 +85,7 @@ namespace BoomerMod
                     text.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
                     text.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                     var tmp = text.GetComponent<TMPro.TextMeshProUGUI>();
-                    tmp.text = $"<size=20>[BM] " + (CustomSave.times[i] == 0 ? "[NO RECORD]" : TimeSpan.FromSeconds(CustomSave.times[i]).ToString(@"mm\:ss\:ff"));
+                    tmp.text = $"<size=20>[BM] " + (CustomSave.times[i] == 0 ? "[NO RECORD]" : Timer.Instance.GetFormattedTime(CustomSave.times[i]));
                     tmp.fontStyle = TMPro.FontStyles.Normal;
                     i++;
                 }
