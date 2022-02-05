@@ -13,6 +13,7 @@ namespace BoomerMod
         {
             if (Initialized)
                 return;
+            CompatibilityModule.prefabSet = new PrefabCompatibility();
             foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>())
             {
                 if (go.name == "Boomer")
@@ -39,4 +40,21 @@ namespace BoomerMod
             return go;
         }
     }
+
+    public class PrefabCompatibility : IPrefabsSet
+    {
+        public GameObject CreateBoomer()
+        {
+            return Prefabs.CreateBoomer();
+        }
+    }
+
+    public class PrefabUMLCompatibility : IPrefabsSet
+    {
+        public GameObject CreateBoomer()
+        {
+            return KarlsonLoader.Prefabs.NewBoomer();
+        }
+    }
+
 }

@@ -7,7 +7,7 @@
     <ProjectGuid>{39A30E93-70E8-4660-A01D-7B6D38332ABF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MelonLoader</RootNamespace>
-    <AssemblyName>BoomerMod_ML</AssemblyName>
+    <AssemblyName>BoomerMod</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -41,6 +41,9 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LoaderAsm">
+      <HintPath>D:\projects\KarlsonTools\lib\LoaderAsm.dll</HintPath>
     </Reference>
     <Reference Include="MelonLoader">
       <HintPath>..\lib\MelonLoader.dll</HintPath>
@@ -234,7 +237,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BM_MonoHooks.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Prefabs.cs" />

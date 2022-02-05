@@ -12,7 +12,7 @@ namespace BoomerMod
     {
         public static bool Prefix(PlayerMovement __instance)
         {
-            __instance.spawnWeapon = Prefabs.CreateBoomer();
+            __instance.spawnWeapon = CompatibilityModule.prefabSet.CreateBoomer();
             return true;
         }
     }
@@ -55,7 +55,7 @@ namespace BoomerMod
         public static void Postfix()
         {
             CustomSave.Load();
-            MelonCoroutines.Start(MainMenu());
+            CompatibilityModule.StartCoroutine(MainMenu());
         }
 
         public static readonly string[] levelNames = new string[] { "Tutorial", "Sandbox0", "Sandbox1", "Sandbox2", "Escape0", "Escape1", "Escape2", "Escape3", "Sky0", "Sky1", "Sky2" };

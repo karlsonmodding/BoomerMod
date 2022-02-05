@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader", "MelonLoader\MelonLoader.csproj", "{39A30E93-70E8-4660-A01D-7B6D38332ABF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UML", "UML\UML.csproj", "{A71A24D5-0197-4905-9815-35ED052BC333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomerMod", "BoomerMod.csproj", "{39A30E93-70E8-4660-A01D-7B6D38332ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{39A30E93-70E8-4660-A01D-7B6D38332ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39A30E93-70E8-4660-A01D-7B6D38332ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39A30E93-70E8-4660-A01D-7B6D38332ABF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A71A24D5-0197-4905-9815-35ED052BC333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A71A24D5-0197-4905-9815-35ED052BC333}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A71A24D5-0197-4905-9815-35ED052BC333}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A71A24D5-0197-4905-9815-35ED052BC333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

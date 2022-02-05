@@ -1,6 +1,4 @@
 .vs
 lib
-MelonLoader/bin
-MelonLoader/obj
-UML/bin
-UML/obj
+bin
+obj
